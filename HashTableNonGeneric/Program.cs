@@ -25,7 +25,9 @@ namespace HashTableNonGeneric
         {
             Console.WriteLine("Welcome to hash table collection");
             MyMapNode<string, int> frequencyDictionary = new MyMapNode<string, int>(10);
+            MyMapNode<string, int> frequencyDictionaryParanoid = new MyMapNode<string, int>(10);
             CountWordFrequency("To be or not to be", frequencyDictionary);
+            CountWordFrequency("Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations", frequencyDictionaryParanoid);
             Console.ReadLine();
         }
     }
